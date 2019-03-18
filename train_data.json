@@ -1,0 +1,211 @@
+﻿{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "hi bot",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Hey there!",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good morning",
+        "intent": "wish",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "morning",
+            "entity": "day"
+          }
+        ]
+      },
+      {
+        "text": "good evening",
+        "intent": "wish",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "evening",
+            "entity": "day"
+          }
+        ]
+      },
+      {
+        "text": "good night",
+        "intent": "wish",
+        "entities": [
+          {
+            "start": 5,
+            "end": 10,
+            "value": "night",
+            "entity": "day"
+          }
+        ]
+      },
+      {
+        "text": "good afternoon",
+        "intent": "wish",
+        "entities": [
+          {
+            "start": 5,
+            "end": 14,
+            "value": "afternoon",
+            "entity": "day"
+          }
+        ]
+      },
+      {
+        "text": "thanks",
+        "intent": "Thank_You",
+        "entities": []
+      },
+      {
+        "text": "this is very helpful",
+        "intent": "Thank_You",
+        "entities": []
+      },
+      {
+        "text": "thank you",
+        "intent": "Thank_You",
+        "entities": []
+      },
+      {
+        "text": "adios",
+        "intent": "Thank_You",
+        "entities": []
+      },
+      {
+        "text": "bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "IOS XE Gibraltar 16.10.x",
+        "intent": "release",
+        "entities": [
+          {
+            "start": 7,
+            "end": 19,
+            "value": "16.10.x",
+            "entity": "version"
+          }
+        ]
+      },
+      {
+        "text": "IOS XE Gibraltar 16.6.1",
+        "intent": "release",
+        "entities": [
+          {
+            "start": 7,
+            "end": 19,
+            "value": "16.6.1",
+            "entity": "version"
+          }
+        ]
+      },
+      {
+        "text": "9300",
+        "intent": "series",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "9300 series switch",
+            "entity": "series"
+          }
+        ]
+      },
+      {
+        "text": "Cisco Catalyst 9300 Series Switches",
+        "intent": "series",
+        "entities": [
+          {
+            "start": 6,
+            "end": 19,
+            "value": "9300 series switch",
+            "entity": "series"
+          }
+        ]
+      },
+      {
+        "text": "Catalyst 9300 Series",
+        "intent": "series",
+        "entities": [
+          {
+            "start": 0,
+            "end": 20,
+            "value": "9300 series switch",
+            "entity": "series"
+          }
+        ]
+      },
+      {
+        "text": "Can you give me an example of sample campus fabric topology in cat 9300?",
+        "intent": "query",
+        "entities": []
+      },
+      {
+        "text": "how does IP Address get assigned to DHCP Client?",
+        "intent": "query",
+        "entities": []
+      },
+      {
+        "text": "How does packet flow happen in DHCP solution?",
+        "intent": "query",
+        "entities": []
+      },
+      {
+        "text": "How many access points can be connected to the fabric?",
+        "intent": "query",
+        "entities": []
+      }
+    ],
+    "regex_features": [
+      {
+        "name": "series",
+        "pattern": "[0-9]{4}"
+      }
+    ],
+    "lookup_tables": [],
+    "entity_synonyms": [
+      {
+        "value": "9300 series switch",
+        "synonyms": [
+          "cisco 9300",
+          "9300",
+          "cat 9300",
+          "catalyst 9300"
+        ]
+      },
+      {
+        "value": "16.6.1",
+        "synonyms": [
+          "16.10.x",
+          "16.5.1a",
+          "Fuji 16.9.x",
+          "Everest 16.6.1"
+        ]
+      }
+    ]
+  }
+}
